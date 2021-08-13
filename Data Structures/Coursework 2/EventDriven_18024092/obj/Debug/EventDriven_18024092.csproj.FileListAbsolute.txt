@@ -1,0 +1,9 @@
+C:\Users\Jessi\source\repos\EventDriven_18024092\bin\Debug\EventDriven_18024092.exe.config
+C:\Users\Jessi\source\repos\EventDriven_18024092\bin\Debug\EventDriven_18024092.exe
+C:\Users\Jessi\source\repos\EventDriven_18024092\bin\Debug\EventDriven_18024092.pdb
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.csprojAssemblyReference.cache
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.Form1.resources
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.Properties.Resources.resources
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.csproj.GenerateResource.cache
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.exe
+C:\Users\Jessi\source\repos\EventDriven_18024092\obj\Debug\EventDriven_18024092.pdb
