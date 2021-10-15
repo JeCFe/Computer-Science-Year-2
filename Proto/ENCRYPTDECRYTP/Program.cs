@@ -18,12 +18,12 @@ namespace ENCRYPTDECRYTP
             byte[] messageToEncrypt = ByteConverter.GetBytes(cypherText);
             RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
             RSA.ImportParameters(RSAKeyInfo);
-            decryptedByte = RSA.Encrypt(messageToEncrypt, true);
+            decryptedByte = RSA.Encrypt(messageToEncrypt, false);
             return ByteConverter.GetString(decryptedByte);
         }
         public static void GenerateKey(string ContainerName)
         {
-            new RSACryptoServiceProvider(new CspParameters { KeyContainerName = ContainerName });
+            new RSACryptoServiceProvider(new CspParameters { KeyContainerName = ContainerName }) ;
         }
         public static RSAParameters GetPublicKey(CspParameters cp)
         {
@@ -41,10 +41,10 @@ namespace ENCRYPTDECRYTP
         {
             UnicodeEncoding ByteConverter = new UnicodeEncoding();
             byte[] messageToEncrypt = ByteConverter.GetBytes(message);
-            byte[] encryptedMessage;
+            //byte[] encryptedMessage;
             RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
             RSA.ImportParameters(RSAKeyInfo);
-            encryptedMessage = RSA.Decrypt(messageToEncrypt, true); //Used private key to Decrypt Message
+            var encryptedMessage = RSA.Decrypt(messageToEncrypt, false); //Used private key to Decrypt Message
             return ByteConverter.GetString(encryptedMessage);
         }
         static void Main(string[] args)
@@ -53,10 +53,11 @@ namespace ENCRYPTDECRYTP
             cp.KeyContainerName = "ClientKey";
             RSACryptoServiceProvider RSA = new RSACryptoServiceProvider(cp);
             
-            string Emessage = encryptMessage("a", RSA.ExportParameters(false));
+            string Emessage = encryptMessage("testing", RSA.ExportParameters(false));
+            Console.WriteLine("E: " + Emessage + "\n");
             string Dmessage = DecryptMessage(Emessage, RSA.ExportParameters(true));
 
-            Console.WriteLine("E: " + Emessage + "\n");
+            
             Console.WriteLine("D: " + Dmessage + "\n");
 
             Console.ReadLine();
