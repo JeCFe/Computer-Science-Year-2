@@ -1,0 +1,4 @@
+﻿  Asisgnement2-DataSturctures.cpp
+C:\Users\Jessi\OneDrive\Desktop\Year 2 University\Data structures\Asisgnement2-DataSturctures\Asisgnement2-DataSturctures.cpp(43,29): warning C4018: '<': signed/unsigned mismatch
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Jessi\OneDrive\Desktop\Year 2 University\Data structures\Asisgnement2-DataSturctures\Debug\Asisgnement2-DataSturctures.exe : fatal error LNK1120: 1 unresolved externals
